@@ -22,7 +22,7 @@
         pessoa_geral_funcao.map(function(pessoa_geral) {
           saida += '<strong> '+ `${pessoa_geral.nome}` + '</strong> ' + `${pessoa_geral.cargo}` ;
           saida += ' - <a href="/atualizar.html?cod_pessoa_geral=' + `${pessoa_geral.cod_pessoa_geral}` + '">EDITAR</a>';
-          saida += ' | <a href="/removeInfo.html?cod_pessoa_geral='+`${pessoa_geral.cod_pessoa_geral}`+'">REMOVER</a></br>';
+          saida += ' | <a href="/removeInfo?cod_pessoa_geral='+`${pessoa_geral.cod_pessoa_geral}`+'">REMOVER</a></br>';
         });
         document.getElementById('resultado').innerHTML = saida;
       })
