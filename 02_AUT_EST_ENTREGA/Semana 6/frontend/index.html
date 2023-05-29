@@ -4,17 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 	<title>Currículo</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
   <div id="principal">
     <div class ="nav" >
       <ul>
-        <li><a href="#principal">Informações gerais</a></li>
+        <li ><a href="#principal">Informações gerais</a></li>
         <li><a href="#experiencia">Experiência e formação</a></li>
-        <li><a href="#personalidade">Personalidade e habilidades</a></li>
+        <li ><a href="#personalidade">Personalidade e habilidades</a></li>
         <li><a href="#realizacoes">Realizações</a></li>
       </ul>
+  
     </div>
     <div id="conteudo" >
       <div class="interno">
@@ -57,10 +60,10 @@
   <div id="personalidade">
     <div class ="nav" >
       <ul>
-        <li><a href="#principal">Informações gerais</a></li>
-        <li><a href="#experiencia">Experiência e formação</a></li>
-        <li><a href="#personalidade">Personalidade e habilidades</a></li>
-        <li><a href="#realizacoes">Realizações</a></li>
+        <li ><a href="#principal">Informações gerais</a></li>
+        <li ><a href="#experiencia">Experiência e formação</a></li>
+        <li ><a href="#personalidade">Personalidade e habilidades</a></li>
+        <li ><a href="#realizacoes">Realizações</a></li>
       </ul>
     </div>
     <div id="conteudo" >
@@ -88,10 +91,49 @@
     <div id="conteudo" style=" width: 100%;">
       <div class="interno">
         <h1> Realizações</h1> 
-        <div class="texto7" style="text-align: left;"> <b>Instituto Sol</b> <br> Bolsa como Jovem Sol adquirida por meio de processo seletivo. Membro desde 2019 <br> <b> Bolsista Graduação Inteli</b> <br> Bolsa integral adquirida por meio de processo seletivo para curasar ciências da computação <br> <b> Voluntariado como professora de matemática</b> <br> Aulas de reforço de matemática aplicadas para alunos de baixa renda da rede pública no Intituto Sol. Ação feita em 2022 </div>
-
+        <div class="texto7" style="text-align: left;"> 
+        <b>Instituto Sol</b> <br> Bolsa como Jovem Sol adquirida por meio de processo seletivo. Membro desde 2019 <br> 
+        <b> Bolsista Graduação Inteli</b> <br> Bolsa integral adquirida por meio de processo seletivo para curasar ciências da computação <br> 
+        <b> Voluntariado como professora de matemática</b> <br> Aulas de reforço de matemática aplicadas para alunos de baixa renda da rede pública no Intituto Sol. Ação feita em 2022 
+        <div class="carrossel">
+          <img src="membrosol.jpg" alt="Imagem 1">
+          <img src="inteli.jpeg" alt="Imagem 2">
+          <img src="aulasol.jpeg" alt="Imagem 3">
+       </div>
        </div>
      </div>
   </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+ $(document).ready(function() {
+    $('.nav li a').click(function(event) {
+
+      var target = $(this).attr('href');
+      $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 1000);
+      
+      
+     
+    });
+    $('.carrossel').slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000 ,
+      arrows: false,
+      adaptiveHeight: true,
+      
+    });
+     
+ });
+</script>
+  
+
 </body>
 </html>
