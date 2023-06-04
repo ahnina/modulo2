@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>Currículo</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+  <div id="principal">
+    <div class ="nav" >
+      <ul>
+        <li ><a href="#principal">Informações gerais</a></li>
+        <li><a href="#experiencia">Experiência e formação</a></li>
+        <li ><a href="#personalidade">Personalidade e habilidades</a></li>
+        <li><a href="#realizacoes">Realizações</a></li>
+      </ul>
+  
+    </div>
+    <div id="conteudo" >
+      <div class="interno">
+        <h1 >Informações gerais</h1> 
+        <div id="foto"><img src="./img/Ana_Clara_Marques_ (7).jpg" alt="Imagem do currículo: Ana clara"></div>
+        <div class="texto" style="text-align: left;"> <b>Nome:</b> Ana Clara Madureira Marques <br> <b> Cargo:  </b>Estudante de ciências da computação </div>
+
+       </div>
+     </div>
+    <div id="lateral">
+      <div class="interno">
+        <h1>Sobre mim</h1>
+        <div class="texto2" style="text-align: left;"> Sou uma jovem universitária bolsista interessada em impactar positivamente a sociedade com meus aprendizados e ações.<br> 
+      </div>
+      <button class="revelar" type="button" onclick="GETContato()">
+        <h1> Mostrar informações de contato </h1>
+      </button>
+    </div>
+  </div>
+  <div id="experiencia">
+    <div class ="nav" >
+      <ul>
+        <li><a href="#principal">Informações gerais</a></li>
+        <li><a href="#experiencia">Experiência e formação</a></li>
+        <li><a href="#personalidade">Personalidade e habilidades</a></li>
+        <li><a href="#realizacoes">Realizações</a></li>
+      </ul>
+    </div>
+    <div id="conteudo" >
+      <div class="interno">
+        <h1 >Experiência</h1> 
+        <div class="texto3" style="text-align: left;"> <b>Projeto de gamificação-Inteli</b> Projeto em grupo focado na entrega de um MVP sobre gamificação de um treinamento implementando as competências sobre o tema colaboração, para a empresa parceira - Cia de Talentos. <br> Construção de roteiro do jogo, design e programação do game. 
+          <br>Linguagens utilizadas: GdScript e Python <br> Plataforma utilizada: Godot Engine</div>
+       </div>
+     </div>
+    <div id="lateral">
+      <div class="interno">
+        <h1>Formação</h1>
+        <div class="texto4" style="text-align: left;"> <b>Colégio Santa Cruz</b>- Ensino Médio <br><b> Inteli-Instituto de tecnologia e liderança</b>- Ciências da computação (2023-2026)</div>
+      </div>
+    </div>
+  </div>
+  <div id="personalidade">
+    <div class ="nav" >
+      <ul>
+        <li ><a href="#principal">Informações gerais</a></li>
+        <li ><a href="#experiencia">Experiência e formação</a></li>
+        <li ><a href="#personalidade">Personalidade e habilidades</a></li>
+        <li ><a href="#realizacoes">Realizações</a></li>
+      </ul>
+    </div>
+    <div id="conteudo" >
+      <div class="interno">
+        <h1 >Habilidades</h1> 
+        <div class="texto5" style="text-align: left;"> Possuo habilidades em: <br> <br> -Resolução de problemas <br> -Projetos em grupo <br> -Modelo de negócios <br> -Documentação <br> -Design <br> -Python  </div>
+        </div>
+     </div>
+    <div id="lateral">
+      <div class="interno">
+        <h1>Personalidade</h1>
+        <div class="texto6" style="text-align: left;"> MInha personalidade em alguns adjetivos: <br> <br> -Calma <br> -Flexível <br> -Proativa <br> -Ética <br> -Empática <br> -Criativa</div>
+      </div>
+    </div>
+  </div>
+  <div id="realizacoes">
+    <div class ="nav" >
+      <ul>
+        <li><a href="#principal">Informações gerais</a></li>
+        <li><a href="#experiencia">Experiência e formação</a></li>
+        <li><a href="#personalidade">Personalidade e habilidades</a></li>
+        <li><a href="#realizacoes">Realizações</a></li>
+      </ul>
+    </div>
+    <div id="conteudo" style=" width: 100%;">
+      <div class="interno">
+        <h1> Realizações</h1> 
+        <div class="texto7" style="text-align: left;"> 
+        <b>Instituto Sol</b> <br> Bolsa como Jovem Sol adquirida por meio de processo seletivo. Membro desde 2019 <br> 
+        <b> Bolsista Graduação Inteli</b> <br> Bolsa integral adquirida por meio de processo seletivo para curasar ciências da computação <br> 
+        <b> Voluntariado como professora de matemática</b> <br> Aulas de reforço de matemática aplicadas para alunos de baixa renda da rede pública no Intituto Sol. Ação feita em 2022 
+        <div class="carrossel">
+          <img src="./img/membrosol.jpg" alt="Imagem 1">
+          <img src="./img/inteli.jpeg" alt="Imagem 2">
+          <img src="./img/aulasol.jpeg" alt="Imagem 3">
+       </div>
+       </div>
+     </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+ $(document).ready(function() {
+    $('.nav li a').click(function(event) {
+
+      var target = $(this).attr('href');
+      $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 1000);
+      
+      
+     
+    });
+    $('.carrossel').slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000 ,
+      arrows: false,
+      adaptiveHeight: true,
+      
+    });
+     
+ });
+</script>
+  
+
+</body>
+</html>

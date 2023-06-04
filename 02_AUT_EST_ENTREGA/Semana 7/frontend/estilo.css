@@ -1,0 +1,294 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
+	* {
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+	}
+	/*imagens flexiveis*/
+	img {   
+  		max-width: 40%;   
+  		height: auto; 
+	
+	} 
+	body, html{
+		background: #fff;;
+        color: #000;
+        height: 100%;
+		font-family:"Space Grotesk";
+	}
+	#principal{
+		/* Largura máxima */
+		max-width:100%;
+		/* Alinha ao centro */
+		margin:0 auto;
+		background:#5aa9e6;
+		overflow:hidden;
+        height: 100%;
+	}
+	
+	#experiencia{
+		/* Largura máxima */
+		max-width:100%;
+		/* Alinha ao centro */
+		margin:0 auto;
+		background:#5aa9e6;
+		overflow:hidden;
+        height: 100%;
+	}
+	#personalidade{
+		/* Largura máxima */
+		max-width:100%;
+		/* Alinha ao centro */
+		margin:0 auto;
+		background:#5aa9e6;
+		overflow:hidden;
+        height: 100%;
+	
+	}
+
+	#realizacoes{
+		/* Largura máxima */
+		max-width:100%;
+		/* Alinha ao centro */
+		margin:0 auto;
+		background:#5aa9e6;
+		overflow:hidden;
+        height: 100%;
+	}
+
+	#realizacoes img{
+		max-width: 10%;
+		height:auto
+	}
+    #foto {
+        width: 100%;
+        height: 15%;
+		text-align: left; 
+		padding: 2%;
+    }
+	#conteudo{
+		/* Largura */
+		width:60%;
+		/* Alinha à esquerda */
+		float:left;
+        background-color: #e2eafc;
+        height: 80%;
+		text-align: center;
+		position: relative;
+	}
+	
+	.interno{
+		padding:2%;
+		margin: 2%;
+		position: relative;
+		line-height: 1.6;
+	}
+
+	.texto {
+		position: absolute;
+        top: 50%;
+        left: 45%; 
+	}
+
+	.texto2 {
+		position: absolute;
+		top: 150%;
+        left: 10%; 
+	}
+
+	.texto3 {
+		position: absolute;
+		top: 130%;
+        left: 10%; 
+	}
+
+	.texto4 {
+		position: absolute;
+		top: 150%;
+        left: 10%; 
+	}
+
+	.texto5 {
+		position: absolute;
+		top: 130%;
+        left: 10%; 
+	}
+	
+	.texto6 {
+		position: absolute;
+		top: 150%;
+        left: 10%; 
+	}
+    .texto7 {
+		position: absolute;
+		top: 100px;
+        left: 50px; 
+		margin-bottom: 20px;
+		max-width: 50%;
+	}
+
+    
+	#lateral{
+		padding:1%;
+		/* Largura */
+		width:40%;
+		/* Alinha à direita */
+		float:right;
+		background:#a2d2ff;
+        height: 80%;
+		text-align: center;
+	}
+	.nav {
+		background-color: #5aa9e6;
+		height: 10%;
+	
+	}
+	  
+	.nav ul {
+		list-style: none;
+		margin: 0;
+		padding:0;
+		display: flex; 
+        justify-content: flex-end;
+    }
+	  
+	.nav li {
+		margin-right: 5%;
+	}
+	  
+    .nav a {
+		display: block;
+		color: #000;
+		text-decoration: none;
+	    padding: 10px;
+	}
+	  
+    .nav a:hover {
+		background-color: #a2d2ff;
+	}
+
+	.nav li a.ativo {
+		background-color: #a2d2ff;
+	
+	}
+       
+	
+
+
+  
+    .carrossel {
+		position: absolute;
+		margin-top: -40%; 
+		margin-left: 110%; 
+		width: 80%; 
+		max-width: 500px; 
+	
+	}
+  
+   .carousel-item {
+	 display: none;
+    }
+
+	.carrossel img {
+		max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+	}
+
+	.revelar{
+		margin-top: 20%;
+		margin-left: -15%;
+		position: fixed;
+		background-color: #5aa9e6;
+		font-size: 12px;
+	}
+
+	.revelar:hover{
+		background-color: #76bff8;
+	}
+
+  
+
+/*seletores para desktops*/
+@media screen and (max-width: 1128px) {
+	#conteudo{ 
+	   width: 70%;
+	   background:#e2eafc;
+	}
+	#lateral{ 
+	   width: 30%;
+	   background:#a2d2ff;
+	}
+	.nav {
+		height: auto; /* Ajusta a altura conforme o conteúdo */
+    }
+	
+	.nav ul {
+		flex-wrap: wrap; /* Coloca os itens verticalmente */
+		justify-content: center; /* Centraliza os itens verticalmente */
+	}
+	
+	.nav li {
+		margin-right: 0; /* Remove a margem entre os itens */
+		margin-bottom: 5px; /* Adiciona espaçamento vertical entre os itens */
+	}
+
+	
+}
+
+/*seletores para tablets*/
+@media screen and (max-width: 768px) {
+	#conteudo{ 
+	   width: 50%;
+	   background:#e2eafc;
+	}
+	#lateral{ 
+	   width: 50%;
+	   background:#a2d2ff;
+	}
+	.nav {
+		height: auto; /* Ajusta a altura conforme o conteúdo */
+    }
+	
+	.nav ul {
+		flex-wrap: wrap; /* Coloca os itens verticalmente */
+		justify-content: center; /* Centraliza os itens verticalmente */
+	}
+	
+	.nav li {
+		margin-right: 0; /* Remove a margem entre os itens */
+		margin-bottom: 5px; /* Adiciona espaçamento vertical entre os itens */
+	}
+}
+
+/*seletores para celurares*/
+@media screen and (max-width: 520px) {
+	#conteudo{ 
+	   width: 100%;
+	   background:#e2eafc;
+       float: none;
+       height: auto;
+	}
+	#lateral{ 
+	   width: 100%;
+	   background:#a2d2ff;
+	   float: none;
+       height: auto;
+	}
+	.nav {
+		height: auto; /* Ajusta a altura conforme o conteúdo */
+    }
+	
+	.nav ul {
+		flex-wrap: wrap; /* Coloca os itens verticalmente */
+		justify-content: center; /* Centraliza os itens verticalmente */
+	}
+	
+	.nav li {
+		margin-right: 0; /* Remove a margem entre os itens */
+		margin-bottom: 5px; /* Adiciona espaçamento vertical entre os itens */
+	}
+}
