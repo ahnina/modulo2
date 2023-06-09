@@ -139,7 +139,9 @@
 		background:#a2d2ff;
         height: 80%;
 		text-align: center;
+		
 	}
+	  
 	.nav {
 		background-color: #5aa9e6;
 		height: 10%;
@@ -197,16 +199,17 @@
         width: auto;
         height: auto;
 	}
+	
 
-	.revelar{
-		margin-top: 20%;
+	.botao #getDB {
+		margin-top: 0;
 		margin-left: -15%;
 		position: fixed;
 		background-color: #5aa9e6;
 		font-size: 12px;
 	}
 
-	.revelar:hover{
+	.botao #getDB:hover{
 		background-color: #76bff8;
 	}
 

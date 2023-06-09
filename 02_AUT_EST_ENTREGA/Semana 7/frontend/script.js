@@ -8,7 +8,7 @@ var getDBResDiv = "#getDB";
 
 /* Função que faz um requisição GET no nosso banco de dados */
 function GETContato(){
-    var url = "/sobre_mim";
+    var url = "http://127.0.0.1:3001/sobre_mim";
     var resposta;
 
     var xhttp = new XMLHttpRequest();
